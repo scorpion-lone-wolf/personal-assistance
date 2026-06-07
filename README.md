@@ -1,4 +1,4 @@
-# personal-assitance
+# personal-assistance
 
 To install dependencies:
 
