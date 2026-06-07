@@ -11,5 +11,13 @@
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "@langchain/classic": "^1.0.34",
+    "@langchain/core": "^1.1.48",
+    "@langchain/google-genai": "^2.1.31",
+    "@langchain/pgvector": "^0.1.0",
+    "langchain": "^1.4.4",
+    "pg": "^8.21.0"
   }
 }
