@@ -1,0 +1,16 @@
+name: Personal-Bot
+services:
+  my_vec_db:
+    image: pgvector/pgvector:0.8.2-pg18-trixie
+    container_name: pg_vector_db
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_DB: my_vec_db
+    volumes:
+      - pgvector_data:/var/lib/postgresql
+
+volumes:
+  pgvector_data:
