@@ -36,7 +36,11 @@ const generateNode: GraphNode<typeof State> = async state => {
     - "Based on the provided context"
     - "The file states"
 
-    Instead, answer(only output answer) naturally as if the information is part of your knowledge.
+    Instead, answer naturally as if the information is part of your knowledge.
+    Think To remember:
+    - If you think the question and context doesn't match then say "I don't know" and you can add more to create proper sentence in polite way.
+    - Dont let user know what memory, context or content we are using.
+    - make you you wrap up in 4 to 5 sentences.
     <Context>
     ${state.context}
     </Context>
